@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+        <title>Home . SecretCipher</title>
+    </head>
+    <body bgcolor="black" text = "white">
+        <H1 Align ="center">Welcome to SecretCipher</H1>
+        <HR width = "50%" size = "3" color = "white" align = "center">
+            <ul> 
+                <li>To encrypt a message or text fill the text on text box and fill key on key box and click encrypt</li>
+                <li>To decrypt an encrypted message fill the text box with encrypted message or text aka cipher text and fill
+                     the key , the same key used to encrypt maybe you did the encryption so you know the key,<br>if your friend 
+                     did encryption ask him for the specific key</li>
+                <li>The key must be a number with no space</li>
+                <li>This encrypt tool uses the caesar cipher technique</li>
+            </ul>
+            <BR> <BR> <BR> <BR>
+            <center>
+                <form name = "cipher">
+                   <B>Text</B> &nbsp; &nbsp; <input type = "text" name = "plaintext">
+                   <BR> <BR>
+                   <b>Key</b> &nbsp; &nbsp; <input type = "text" name = "cipher_key">
+                   <span id="keyerror" style="color:red"></span>
+                   <BR> <BR>
+                   <B>Encrypted/Decrypted Text</B> &nbsp; &nbsp; <textarea id="output" readonly></textarea>
+                   <BR> <BR>
+                    <input type = "button" value = "Encrypt" onclick = "encrypt()" style="font-size: 20px;">
+                      &nbsp;  &nbsp;
+                    <input type ="button" value = "Decrypt" onclick = "decrypt()" style="font-size: 20px;">
+                </form>
+            </center>
+
+    </body>
+</html>
